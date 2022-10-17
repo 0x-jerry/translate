@@ -256,7 +256,12 @@ string.replaceAll(re2, "X");
 
 作为我们在这些 JavaScript 功能上工作的一部分，我超越了“仅仅”提议对 ECMAScript 规范进行更改。我们将“字符串属性”的定义
 升级到了 [Unicode UTS#18](https://unicode.org/reports/tr18/#Notation_for_Properties_of_Strings)，以便其他
-编程语言可以统一实现类似的功能。我们还给 HTMl 标准提议进行修改，目的是在模式属性中也启用这些功能。
+编程语言可以统一实现类似的功能。我们还给 [HTMl 标准提议进行修改](https://github.com/whatwg/html/pull/7908)，目的是在模式属性中也启用这些功能。
+
+## RegExp `v` 标志支持情况
+
+`v` 标志还没有在任何 JavaScript 引擎中支持。但是，Babel 已经支持对其转译 - [请在 Babel REPL 中尝试本文中的例子！](https://babeljs.io/repl/#?code_lz=MYewdgzgLgBATgUxgXhgegNoYIYFoBmAugGTEbC4AWhhaAbgNwBQTaaMAKpQJYQy8xKAVwDmSQCgEMKHACeMIWFABbJQjBRuYEfygBCVmlCRYCJSABW3FOgA6ABwDeAJQDiASQD6AUTOWAvvTMQA&presets=stage-3)
+如下支持表格已链接到相关的追踪问题，你可以订阅其更新。
 
 [unicode mode]: https://mathiasbynens.be/notes/es6-unicode-regex
 [sticky mode]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky#description
